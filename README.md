@@ -9,4 +9,4 @@ Design proposal for Portuguese Paralympic Committee Extranet.
 * Home :heavy_check_mark:
 * Upload Document :heavy_check_mark:
 * List View :heavy_check_mark:
-* Manage Subscriptions
+* Manage Subscriptions :heavy_check_mark:
