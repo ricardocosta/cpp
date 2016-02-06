@@ -1,0 +1,79 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+}
+
+.red {
+    color: #A90707;
+}
+
+.red-bg {
+    background-color: #A90707;
+}
+
+.dark-grey {
+    color: #444;
+}
+
+.dark-grey-bg {
+    background-color: #444;
+}
+
+.white {
+    color: #FFF;
+}
+
+.white-bg {
+    background-color: #FFF;
+}
+
+
+.icon-lg {
+    font-size: 48px;
+}
+
+.icon-sm {
+    
+}
+
+.navbar {
+    padding: 0 50px;
+}
+
+.navbar-header {
+    padding: 30px 0;
+}
+
+.navbar-nav p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar-nav > li > p {
+    margin: 25px 0;
+}
+
+.logo-vert {
+    height: 210px;
+}
+
+.logo-horz {
+    height: 120px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+}
+
+.footer p {
+    margin: 17px auto;
+}
