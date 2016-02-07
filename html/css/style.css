@@ -1,3 +1,43 @@
+.red {
+  color: #A90707;
+}
+
+.red-bg {
+  background-color: #A90707;
+}
+
+.dark-grey {
+  color: #444444;
+}
+
+.dark-grey-bg {
+  background-color: #444444;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.white-bg {
+  background-color: #FFFFFF;
+}
+
+.blue {
+  color: #2567C2;
+}
+
+.blue-bg {
+  background-color: #2567C2;
+}
+
+.green {
+  color: #2E7D32;
+}
+
+.green-bg {
+  background-color: #2E7D32;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -8,62 +48,59 @@ body {
   margin-bottom: 50px;
 }
 
-.red {
-    color: #A90707;
-}
-
-.red-bg {
-    background-color: #A90707;
-}
-
-.dark-grey {
-    color: #444;
-}
-
-.dark-grey-bg {
-    background-color: #444;
-}
-
-.white {
-    color: #FFF;
-}
-
-.white-bg {
-    background-color: #FFF;
-}
-
-
 .icon-lg {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .icon-sm {
-    
+  font-size: 16px;
 }
 
 .navbar {
-    padding: 0 50px;
+  padding: 30px;
 }
 
-.navbar-header {
-    padding: 30px 0;
+.navbar .navbar-header .navbar-toggle {
+  margin: 0;
 }
 
-.navbar-nav p {
-    font-size: 20px;
-    text-align: center;
+.navbar .navbar-header .logo-vert {
+  height: 210px;
 }
 
-.navbar-nav > li > p {
-    margin: 25px 0;
+.navbar .navbar-header .logo-horz {
+  height: 120px;
 }
 
-.logo-vert {
-    height: 210px;
+.navbar .navbar-collapse {
+  border: none;
 }
 
-.logo-horz {
-    height: 120px;
+.navbar .navbar-collapse .navbar-nav {
+  margin: 0;
+}
+
+.navbar .navbar-collapse .navbar-nav p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.navbar .navbar-collapse .navbar-nav li {
+  margin: auto 20px;
+}
+
+.navbar .navbar-collapse .navbar-nav li a {
+  padding: 0;
+}
+
+.panel-body {
+  padding: 30px 20px;
+}
+
+.panel-body h2 {
+  margin: 0;
+  font-size: 20px;
 }
 
 .footer {
@@ -75,5 +112,5 @@ body {
 }
 
 .footer p {
-    margin: 17px auto;
+  margin: 17px auto;
 }

@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'colours';
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+
+.icon-lg {
+    font-size: $icon-lg-size;
+}
+
+.icon-sm {
+    font-size: $icon-sm-size;
+}
+
+.navbar {
+    padding: 30px;
+    
+    .navbar-header {
+        .navbar-toggle {
+            margin: 0;
+        }
+        
+        .logo-vert {
+            height: $logo-vertical-height;
+        }
+
+        .logo-horz {
+            height: $logo-horizontal-height;
+        }
+    }
+    
+    .navbar-collapse {
+        border: none;
+        
+        .navbar-nav {
+            margin: 0;
+            
+            p {
+                font-size: $menu-font-size;
+                text-align: center;
+                line-height: $icon-lg-size;
+            }
+
+            li {
+                margin: auto 20px;
+                
+                a {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.panel-body {
+    padding: 30px 20px;
+    
+    h2 {
+        margin: 0;
+        font-size: $card-title-font-size;
+    }
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: $footer-height;
+    
+    p {
+        margin: 17px auto;
+    }
+}
