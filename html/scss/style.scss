@@ -17,6 +17,13 @@ body {
 
 .icon-sm {
     font-size: $icon-sm-size;
+    margin-left: 10px;
+}
+
+.divider {
+    height: 1px;
+    margin: 20px 0;
+    background: $medium-grey;
 }
 
 .navbar {
@@ -59,13 +66,83 @@ body {
     }
 }
 
-.panel-body {
+
+#panel-login {
+    .form-group {
+        &.is-focused label.control-label {
+            color: $blue;
+        }
+        
+        .form-control {
+            background-image: linear-gradient($blue, $blue), linear-gradient(#D2D2D2, #D2D2D2);
+        }
+    }
+    
+    
+    .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+        color: $blue;
+        border-color: $blue;
+        
+        &:before{
+            color: $blue;
+        }
+    }
+}
+
+.panel {
     padding: 30px 20px;
     
-    h2 {
+    .card-title {
         margin: 0;
         font-size: $card-title-font-size;
     }
+    
+    .panel-body {
+        margin: 20px 0 0;
+        padding: 0;
+        
+        .form-group {
+            padding: 0;
+            margin: 20px 0 0;
+            
+            .control-label 
+            {
+                font-size: $label-font-size;
+            }
+        }
+        
+        .btn {
+            margin: 0;
+            padding: 8px 20px;
+        }
+        
+        .btn-link {
+            margin: 0;
+            padding: $icon-sm-size 0 0;
+            font-size: $btn-font-size;
+        }
+        
+        .btn.btn-raised {
+            color: $white;
+            font-weight: normal;
+            font-size: $btn-font-size;
+            line-height: $icon-sm-size;
+            
+            i.material-icons {
+                vertical-align: sub;
+            }
+            
+            &#btn-login {
+                background-color: $blue;
+            }
+            
+            &#btn-register {
+                background-color: $green;
+            }
+        }
+    }
+    
+    
 }
 
 
