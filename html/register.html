@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Extranet CPP</title>
+        <title>Extranet CPP | Registar</title>
         
         <!-- Material Design fonts -->
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -52,35 +52,48 @@
             </div>
         </nav>
         
-        <div id="panel-login" class="panel panel-default col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1">
-            <h2 class="card-title blue text-center">ENTRAR</h2> 
+        <div id="panel-register" class="panel panel-default col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1">
+            <h2 class="card-title blue text-center">REGISTAR</h2> 
             <div class="panel-body">
                 <div class="form-group label-floating">
-                      <label class="control-label" for="email">Nome de Utilizador ou E-mail</label>
-                      <input class="form-control" id="email" type="text" >
+                      <label class="control-label" for="name">Nome</label>
+                      <input class="form-control" id="name" type="text" >
                 </div>
-                <div class="form-group label-floating blue">
-                      <label class="control-label" for="password">Palavra-Passe</label>
-                      <input class="form-control" id="password" type="password">
+                <div class="form-group label-floating">
+                      <label class="control-label" for="email">E-Mail</label>
+                      <input class="form-control" id="email" type="email" >
                 </div>
-                <div class="form-group"> <!-- inline style is just to demo custom css to put checkbox below input above -->
-                    <div class="checkbox">
-                        <label for="remember-me">
-                            <input type="checkbox" id="remember-me"><span class="checkbox-material"></span> Lembrar Sessão
-                        </label>
-                    </div>
+                <div class="form-group label-floating">
+                      <label class="control-label" for="phone">Telefone</label>
+                      <input class="form-control" id="phone" type="tel" >
+                </div>
+                <div class="form-group">
+                    <label class="control-label select-label" for="area">Área</label>
+                    <select id="area" class="form-control">
+                        <option value="-1" disabled selected>Selecione</option>
+                        <option>Atletas</option>
+                        <option>Federações</option>
+                        <option>Treinadores</option>
+                        <option>Equipa Médica</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label select-label" for="modality">Modalidade</label>
+                    <select id="modality" class="form-control">
+                        <option value="-1" disabled selected>Selecione</option>
+                        <option>Atletismo</option>
+                        <option>Natação</option>
+                        <option>Boccia</option>
+                        <option>Remo</option>
+                    </select>
                 </div>
                 <div class="row">
                     <div class="col-xs-6">
-                        <a href="#" class="btn btn-link">ALTERAR PALAVRA-PASSE</a>
+                        <a href="/" class="btn btn-link">VOLTAR A PARALIMPICOS.EU</a>
                     </div>
                     <div class="col-xs-6">
-                        <a id="btn-login" href="#" class="btn btn-raised pull-right">ENTRAR <i class="material-icons white icon-sm">exit_to_app</i></a>
+                        <a href="#" class="btn btn-raised btn-main pull-right">REGISTAR <i class="material-icons white icon-sm">person_add</i></a>
                     </div>
-                </div>
-                <div class="divider"></div>
-                <div class="panel-bottom text-center">
-                    <a id="btn-register" href="./register.html" class="btn btn-raised white">REGISTAR <i class="material-icons white icon-sm">person_add</i></a>
                 </div>
             </div>
         </div>
