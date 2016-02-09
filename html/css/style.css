@@ -48,10 +48,6 @@ body {
   margin-bottom: 50px;
 }
 
-.icon-lg {
-  font-size: 48px;
-}
-
 .icon-sm {
   font-size: 16px;
   margin-left: 10px;
@@ -61,6 +57,10 @@ body {
   height: 1px;
   margin: 20px 0;
   background: #BDBDBD;
+}
+
+.mt20 {
+  margin-top: 20px;
 }
 
 .navbar {
@@ -85,6 +85,15 @@ body {
 
 .navbar .navbar-collapse .navbar-nav {
   margin: 0;
+}
+
+.navbar .navbar-collapse .navbar-nav .icon-lg {
+  font-size: 48px;
+}
+
+.navbar .navbar-collapse .navbar-nav .icon-md {
+  font-size: 36px;
+  line-height: 48px;
 }
 
 .navbar .navbar-collapse .navbar-nav p {
@@ -149,6 +158,31 @@ body {
 
 #panel-register .btn.btn-raised.btn-main {
   background-color: #2E7D32;
+}
+
+#panel-chg-pass .card-title {
+  color: #000000;
+}
+
+#panel-chg-pass .form-group.is-focused label.control-label {
+  color: #000000;
+}
+
+#panel-chg-pass .form-group .form-control {
+  background-image: linear-gradient(#000000, #000000), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+#panel-chg-pass .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  color: #000000;
+  border-color: #000000;
+}
+
+#panel-chg-pass .checkbox input[type=checkbox]:checked + .checkbox-material .check:before {
+  color: #000000;
+}
+
+#panel-chg-pass .btn.btn-raised.btn-main {
+  background-color: #000000;
 }
 
 .panel {
