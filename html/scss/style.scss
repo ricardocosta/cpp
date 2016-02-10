@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'colours';
+@import 'mixins';
 
 html {
   position: relative;
@@ -96,7 +97,8 @@ $cards: (
     panel-register: $green,
     panel-chg-pass: $black,
     panel-folders: $black,
-    panel-upload: $green
+    panel-upload: $green,
+    panel-list-view: $blue
 );
 
 @each $panel, $colour in $cards {
@@ -203,34 +205,56 @@ $cards: (
     }
 }
 
-.folder-item {
+.list-item {
     display: block;
     
-    .folder-icon {
+    .item-icon {
         margin-top: 5px;
     }
     
-    .folder-title {
+    .item-title {
         font-size: $folder-title-font-size;
         font-weight: 300;
         margin: 0;
         padding: 5px 0;
         color: black;
+        @include ellipsis();
     }
     
-    .folder-description {
+    .item-description {
         font-size: $folder-description-font-size;
         color: $medium-grey;
+        @include ellipsis();
     }
     
-    .folder-link {
+    .item-link {
         margin-top: 10px;
     }
+    
+    .folder-title {
+        font-size: $folder-title-font-size;
+        font-weight: bold;
+        line-height: $icon-circle-line-height;
+        margin: 0;
+        padding: 5px 0;
+        color: black;
+    }
+    
+    .item-date {
+        font-size: $folder-description-font-size;
+        color: $medium-grey;
+        line-height: $icon-circle-line-height;
+        white-space: nowrap;
+    }
+}
+
+.list-item-folder {
+    padding-bottom: 5px;
 }
 
 .item-divider {
     clear: both;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .footer {
