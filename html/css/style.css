@@ -383,7 +383,7 @@ body {
 }
 
 #panel-manage-subs {
-  overflow: scroll;
+  overflow-x: auto;
 }
 
 #panel-manage-subs .nav {
