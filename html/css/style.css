@@ -47,13 +47,42 @@
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 50px;
+  position: relative;
+  margin: 0;
+  padding-bottom: 40px;
+  min-height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  margin: 17px auto;
+  line-height: 40px;
+}
+
+.push {
+  clear: both;
+  height: 80px;
 }
 
 .icon-sm {
@@ -309,7 +338,6 @@ body {
 
 .panel {
   padding: 30px 20px;
-  margin-bottom: 100px;
 }
 
 .panel .card-title {
@@ -472,16 +500,4 @@ body {
 .item-divider {
   clear: both;
   margin: 5px 0;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
-}
-
-.footer p {
-  margin: 17px auto;
 }
