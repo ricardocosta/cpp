@@ -98,7 +98,8 @@ $cards: (
     panel-chg-pass: $black,
     panel-folders: $black,
     panel-upload: $green,
-    panel-list-view: $blue
+    panel-list-view: $blue,
+    panel-manage-subs: $black
 );
 
 @each $panel, $colour in $cards {
@@ -141,6 +142,7 @@ $cards: (
     .card-title {
         margin: 0;
         font-size: $card-title-font-size;
+        text-transform: uppercase;
     }
     
     .panel-body {
@@ -189,7 +191,7 @@ $cards: (
     }
 }
 
-#panel-upload {
+#panel-upload, #panel-home-upload {
     margin-bottom: 30px;
     
     &.panel {
@@ -203,6 +205,46 @@ $cards: (
     a:hover {
         text-decoration: none;
     }
+}
+
+#panel-home-upload.card-title {
+    color: $black;
+}
+
+#panel-manage-subs {
+    overflow: scroll;
+    
+    .nav {
+        background-color: $white;
+        border: none;
+    }
+    
+    li.active {
+        border-bottom: 2px solid $black;
+    }
+    
+    a {
+        color: $black !important;
+    }
+    
+    thead {
+        margin: 0;
+        border-top: 1px solid $medium-grey;
+        border-bottom: 1px solid $medium-grey;
+    }
+    
+    th {
+        padding: 10px inherit;
+        font-size: $label-font-size;
+        font-weight: normal;
+        color: $medium-grey;
+    }
+    
+    th,td {
+        border: none;
+        border-bottom: 1px solid $medium-grey;
+    }
+    
 }
 
 .list-item {
