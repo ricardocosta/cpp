@@ -16,6 +16,21 @@ body {
     margin-left: 10px;
 }
 
+.icon-circle-wrapper {
+    
+    width: $icon-circle-line-height;
+    height: $icon-circle-line-height;
+    border-radius: 100%;
+    
+    .icon-circle {    
+        text-align: center;
+        line-height: $icon-circle-line-height;
+        font-size: $icon-circle-size;
+        color: white;
+        margin-left: -5px;
+    }
+}
+
 .divider {
     height: 1px;
     margin: 20px 0;
@@ -79,7 +94,8 @@ body {
 $cards: (
     panel-login: $blue,
     panel-register: $green,
-    panel-chg-pass: $black
+    panel-chg-pass: $black,
+    panel-folders: $black
 );
 
 @each $panel, $colour in $cards {
@@ -112,6 +128,8 @@ $cards: (
         }
     }
 }
+
+
 
 .panel {
     padding: 30px 20px;
@@ -166,6 +184,51 @@ $cards: (
             }
         }
     }
+}
+
+#panel-upload {
+    margin-bottom: 30px;
+    
+    &.panel {
+        padding: 20px !important;
+    }
+    
+    .card-title {
+        line-height: $icon-circle-line-height;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.folder-item {
+    display: block;
+    
+    .folder-icon {
+        margin-top: 5px;
+    }
+    
+    .folder-title {
+        font-size: $folder-title-font-size;
+        font-weight: 300;
+        margin: 0;
+        padding: 5px 0;
+        color: black;
+    }
+    
+    .folder-description {
+        font-size: $folder-description-font-size;
+        color: $medium-grey;
+    }
+    
+    .folder-link {
+        margin-top: 10px;
+    }
+}
+
+.item-divider {
+    clear: both;
 }
 
 .footer {

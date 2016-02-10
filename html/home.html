@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Extranet CPP | Alterar Palavra-Passe</title>
+        <title>Extranet CPP | Início</title>
         
         <!-- Material Design fonts -->
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -40,7 +40,7 @@
                         </a>
                     </li>
                     <li class="hidden-xs">
-                        <p class="dark-grey ">Randy Burton</p>
+                        <p class="dark-grey">Randy Burton</p>
                     </li>
                     <li>
                         <a href="#">
@@ -52,33 +52,49 @@
             </div>
         </nav>
         
-        <div id="panel-chg-pass" class="panel panel-default col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1">
-            <h2 class="card-title text-center">ALTERAR PALAVRA-PASSE</h2> 
+        <div id="panel-upload" class="panel panel-default col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+            <a href="upload.html">
+                <div class="col-sm-10">
+                    <h2 class="card-title black">CARREGAR FICHEIRO</h2>
+                </div>
+                <div class="col-sm-2 hidden-xs pull-right icon-circle-wrapper green-bg">
+                    <i class="material-icons icon-circle">cloud_upload</i>
+                </div>
+            </a>
+        </div>
+        
+        <div id="panel-folders" class="panel panel-default col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+            <h2 class="card-title">AS MINHAS PASTAS</h2>
             <div class="panel-body">
-                <div class="form-group label-floating">
-                      <label class="control-label" for="name">Nome de Utilizador</label>
-                      <input class="form-control" id="name" type="text" >
-                </div>
-                <div class="form-group label-floating">
-                      <label class="control-label" for="password-old">Palavra-Passe Antiga</label>
-                      <input class="form-control" id="password-old" type="password">
-                </div>
-                <div class="form-group label-floating">
-                      <label class="control-label" for="password-new">Palavra-Passe Nova</label>
-                      <input class="form-control" id="password-new" type="password">
-                </div>
-                <div class="form-group label-floating">
-                      <label class="control-label" for="password-new-confirm">Confirmar Palavra-Passe Nova</label>
-                      <input class="form-control" id="password-new-confirm" type="password">
-                </div>
-                <div class="row mt20">
-                    <div class="col-xs-6">
-                        <a href="/" class="btn btn-link">VOLTAR A PARALIMPICOS.EU</a>
+                <a href="./view-list.html">
+                    <div class="folder-item col-md-12">
+                        <div class="col-xs-1 hidden-xs folder-icon icon-circle-wrapper blue-bg ">
+                            <i class="material-icons icon-circle">folder</i>
+                        </div>
+                        <div class="col-xs-9">
+                            <h3 class="folder-title">Federações</h3>
+                            <p class="folder-description">Lista acessível por todas as Federações.</p>
+                        </div>
+                        <div class="col-xs-1 pull-right folder-link blue">
+                            <i class="material-icons">send</i>
+                        </div>
                     </div>
-                    <div class="col-xs-6">
-                        <a href="#" class="btn btn-raised btn-main pull-right">ALTERAR <i class="material-icons icon-sm">send</i></a>
+                </a>
+                <div class="item-divider divider"></div>
+                <a href="./view-list.html">
+                    <div class="folder-item col-md-12">
+                        <div class="col-xs-1 hidden-xs folder-icon icon-circle-wrapper blue-bg ">
+                            <i class="material-icons icon-circle">folder</i>
+                        </div>
+                        <div class="col-xs-9">
+                            <h3 class="folder-title">Federação Portuguesa de Atletismo</h3>
+                            <p class="folder-description">Lista exclusiva da Federação Portuguesa de Atletismo.</p>
+                        </div>
+                        <div class="col-xs-1 pull-right folder-link blue">
+                            <i class="material-icons">send</i>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         
