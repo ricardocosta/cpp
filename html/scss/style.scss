@@ -95,7 +95,8 @@ $cards: (
     panel-login: $blue,
     panel-register: $green,
     panel-chg-pass: $black,
-    panel-folders: $black
+    panel-folders: $black,
+    panel-upload: $green
 );
 
 @each $panel, $colour in $cards {
@@ -123,7 +124,7 @@ $cards: (
                 color: $colour;
             }
         }
-        .btn.btn-raised.btn-main {
+        .btn.btn-raised.btn-main, .btn.btn-fab.btn-fab-mini {
             background-color: $colour;
         }
     }
@@ -229,6 +230,7 @@ $cards: (
 
 .item-divider {
     clear: both;
+    margin: 10px 0;
 }
 
 .footer {
